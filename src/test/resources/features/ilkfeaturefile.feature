@@ -1,9 +1,21 @@
+@google_search
 Feature: ilk feature file
 
+  Background: Google_sayfasina_git
+    Given kullanici google gider
+
+  @iphone
   Scenario: TC01_google_iphone_arama
-  Given kullanici google gider
-  When kullanici iphone için arama yapar
-  Then sonuclarda iphone oldugunu dogrular
+    When kullanici iphone için arama yapar
+    Then sonuclarda iphone oldugunu dogrular
+    Then close the application
+
+
+  @tesla
+  Scenario: TC02_google_tesla_arama
+    When kullanici tesla için arama yapar
+    Then sonuclarda tesla oldugunu dogrular
+    Then close the application
 
 
 #  1. Her feature file, Feature: kelimesi ile baslamak zorundadir
@@ -14,5 +26,8 @@ Feature: ilk feature file
 #  6. Given -> Genelde ilk satirlarda, pre condition stepleri icin kullanilir
 #  7. Then -> Genelde son satirlarda, verification stepleri icin kullanilir
 #  8. And, When -> Genelde ara adimlarda baglac olarak kullanilir
-#  NOTE: Teknik olarak istenilen kelime istenilen step de kullanilabilir,
-#        ama anlam karmasasi olmamasi icin bu adimlar takip edilir
+#       NOTE: Teknik olarak istenilen kelime istenilen step de kullanilabilir,
+#             ama anlam karmasasi olmamasi icin bu adimlar takip edilir
+#  9. Belirli Scenario lari calistirmak icin cucumber tags ler kullanilir
+#  tag ler Fetuature, Scenario, Scerio Outline, Examples kelimeleri ile birlikte kullanilabilir
+#  10.Background: Her bir Scenario kelimesinden önce tek bir sefer çalişir. ( Before method gibi )
