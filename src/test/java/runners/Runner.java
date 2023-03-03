@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",//features folder path
         glue = "stepdefinitions",   //stepdefinitions path
-        tags = "@personel_olusturma",
+        tags = "@data_tables",
         dryRun = false
 
 
