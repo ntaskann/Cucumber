@@ -6,6 +6,7 @@ Feature:data_tables
     When kullanici email ve sifre girer
       | email                         | sifre     |
       | sam.walker@bluerentalcars.com | c!fas_art |
+    Then close the application
 
 
 

@@ -9,7 +9,7 @@ import utilities.Driver;
 
 public class Hooks {
     /*
-    Hooks : Her bir Scenario yada Scenario Outline dan ONCE yada SONRA calismasmasini istedigim metotlar konur
+    Hooks : Her bir Scenario yada Scenario Outline dan ONCE yada SONRA calismasini istedigim metotlar konur
     @Before ve @After metotlarini icerir
     Burda onemli olan raporlama isleminin ekran goruntusuyle birlikde Hooks yardimiyla yapilmasidir
      */
@@ -25,7 +25,7 @@ public class Hooks {
 //        Eger bir Scenario FAIL ederse, ekran goruntusunu al ve rapora ekle
         if (scenario.isFailed()) {
             final byte[] failedScreenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-//                       ekran goruntusu    file tipi                  ekran goruntusunun adi
+//                       ekran goruntusu       file tipi                  ekran goruntusunun adi
             scenario.attach(failedScreenshot, "image/png", "failed_scenario_" + scenario.getName());
             Driver.closeDriver();
         }

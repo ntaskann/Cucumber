@@ -11,6 +11,7 @@ public class BlueRentalCarsLoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
+
     @FindBy(xpath = "//input[@id='formBasicEmail']")
     public WebElement email;
 
