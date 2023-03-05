@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.52" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="excel_login_feature" name="TC01_musteri_giris_testi" time="0.05">
-<failure/>
+<testsuite name="Cucumber" time="1.62" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="excel_login_feature" name="TC01_musteri_giris_testi" time="1.309">
 <system-out><![CDATA[
-Given kullanici "customer_info" bilgileri ile giris yapar...................undefined
+Given kullanici "customer_info" bilgileri ile giris yapar...................passed
 ]]></system-out>
 </testcase>
 </testsuite>

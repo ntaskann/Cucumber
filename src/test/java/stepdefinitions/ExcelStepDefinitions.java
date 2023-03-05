@@ -18,7 +18,7 @@ public class ExcelStepDefinitions {
 
     @Given("kullanici {string} bilgileri ile giris yapar")
     public void kullanici_bilgileri_ile_giris_yapar(String string) {
-        String path = "./src/test/java/resources/mysmoketestdata.xlsx";
+        String path="./src/test/resources/testdata/mysmoketestdata.xlsx";
         String sayfa = "customer_info";
         excelUtils = new ExcelUtils(path, sayfa);
         excelData = excelUtils.getDataList();
