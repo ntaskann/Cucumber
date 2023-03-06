@@ -6,7 +6,7 @@ Feature: hooks_test
 
   Scenario: TC01_google_iphone_arama
     When kullanici "iphone" için arama yapar
-    Then sonuclarda "samsung" oldugunu dogrular
+    Then sonuclarda "iphone" oldugunu dogrular
     Then close the application
 
 

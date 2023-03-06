@@ -24,7 +24,7 @@ public class GoogleStepDefinitions {
     }
 
     @When("kullanici iphone için arama yapar")
-    public void kullanici_iphone_için_arama_yapar() {
+    public void kullanici_iphone_icin_arama_yapar() {
         googlePage.searchBox.sendKeys("iphone", Keys.ENTER);
     }
 
@@ -39,7 +39,7 @@ public class GoogleStepDefinitions {
     }
 
     @When("kullanici tesla için arama yapar")
-    public void kullanici_tesla_için_arama_yapar() {
+    public void kullanici_tesla_icin_arama_yapar() {
         googlePage.searchBox.sendKeys("tesla", Keys.ENTER);
     }
 
@@ -49,9 +49,9 @@ public class GoogleStepDefinitions {
     }
 
 
-    @When("kullanici {string} için arama yapar")
-    public void kullanici_için_arama_yapar(String string) {
-        googlePage.searchBox.sendKeys(string+Keys.ENTER);
+    @When("kullanici {string} icin arama yapar")
+    public void kullanici_icin_arama_yapar(String string) {
+        googlePage.searchBox.sendKeys(string + Keys.ENTER);
     }
 
     @Then("sonuclarda {string} oldugunu dogrular")
