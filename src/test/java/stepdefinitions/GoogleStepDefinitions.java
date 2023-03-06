@@ -23,7 +23,7 @@ public class GoogleStepDefinitions {
 //        }
     }
 
-    @When("kullanici iphone için arama yapar")
+    @When("kullanici iphone icin arama yapar")
     public void kullanici_iphone_icin_arama_yapar() {
         googlePage.searchBox.sendKeys("iphone", Keys.ENTER);
     }
@@ -38,7 +38,7 @@ public class GoogleStepDefinitions {
         Driver.closeDriver();
     }
 
-    @When("kullanici tesla için arama yapar")
+    @When("kullanici tesla icin arama yapar")
     public void kullanici_tesla_icin_arama_yapar() {
         googlePage.searchBox.sendKeys("tesla", Keys.ENTER);
     }
