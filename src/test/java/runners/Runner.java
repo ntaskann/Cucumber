@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",//features folder path
         glue = {"stepdefinitions", "hooks"},   //stepdefinitions path
-        tags = "@failed_scenario",
+        tags = "@Canhoca_odev1",
         dryRun = false
 
 
